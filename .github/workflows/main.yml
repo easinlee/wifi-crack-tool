@@ -25,11 +25,11 @@ jobs:
 
       - name: Build exe with PyInstaller
         run: |
-          pyinstaller --onefile your_script.py
+          pyinstaller --onefile wifi_crack_tool.py
         # 输出的 exe 会在 dist/your_script.exe
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: my-exe
+          name: wifi_crack_tool
           path: dist/*.exe
